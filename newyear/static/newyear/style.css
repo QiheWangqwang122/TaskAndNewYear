@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Sets the height to 100% of the viewport */
+    margin: 0; /* Removes default margin */
+    font-size: 4em; /* Makes the text bigger */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Adds a glowing effect */
+    animation: dance 2s infinite, colorChange 5s infinite; /* Adds a dancing and color changing animation */
+}
+
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+}
+
+
+h1 {
+    color: rgb(27, 8, 8);
+}
